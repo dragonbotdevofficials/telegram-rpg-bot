@@ -1,0 +1,13 @@
+{
+    "health": 100,
+    "xp": 128,
+    "level": 2,
+    "coins": 296,
+    "potions": 5,
+    "inventory": [
+        "\ud83d\udc8e Magic Stone"
+    ],
+    "equipped_weapon": "",
+    "attack_bonus": 0,
+    "last_daily": 1779714390.0736437
+}
