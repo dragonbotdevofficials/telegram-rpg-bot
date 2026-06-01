@@ -18,6 +18,7 @@ from aiogram.filters import Command
 # =========================
 TOKEN = "8657765697:AAH4Xfv3hNacYoRtY7-0QdNRRzbwZOm-t-A"
 
+ADMIN_ID = 8981858811
 # =========================
 # OLLAMA
 # =========================
@@ -138,8 +139,12 @@ async def start(message: Message):
 @dp.message(Command("stats"))
 async def stats(message: Message):
 
+    if message.from_user.id != ADMIN_ID:
+        await message.answer("❌ Access denied.")
+        return
+
     text = (
-        f"👤 PLAYER STATS\n\n"
+        f"🛠️ ADMIN STATS\n\n"
         f"🏆 Level: {player['level']}\n"
         f"❤️ Health: {player['health']}\n"
         f"⭐ XP: {player['xp']}\n"
@@ -150,7 +155,6 @@ async def stats(message: Message):
     )
 
     await message.answer(text)
-
 # =========================
 # QUEST
 # =========================
