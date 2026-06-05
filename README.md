@@ -48,6 +48,8 @@ A feature-rich Telegram RPG bot built with Python and Aiogram.
 * Leaderboards
 * Database support
 
+Last updated: RPG Boss System Complete
+
 ## Author
 
 DragonBotDevOfficials
